@@ -87,7 +87,7 @@ function ButtonAppBar() {
   const handleSendOtp = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://bookmyshow-backend.vercel.app/reset-password', {
+      const response = await fetch('https://reactmdn-backend.vercel.app/reset-password', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
@@ -131,7 +131,7 @@ function ButtonAppBar() {
   const handleResetPassword = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://bookmyshow-backend.vercel.app/update-password', {
+      const response = await fetch('https://reactmdn-backend.vercel.app/update-password', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, otp, password }),
@@ -188,13 +188,13 @@ function Login() {
 
   const formik = useFormik({
     initialValues: {
-      username: '',
+      email: '',
       password: ''
     },
     // validationSchema: formValidationSchema,
     onSubmit: async (values) => {
       console.log("submit");
-      const data = await fetch("https://bookmyshow-backend.vercel.app/users/login", {
+      const data = await fetch("https://reactmdn-backend.vercel.app/users/login", {
         method: "POST",
         headers: {
           "content-type": "application/json"
@@ -223,10 +223,10 @@ function Login() {
             <h2>LOGIN</h2>
             <div className='loginfield'>
               <TextField
-                name='username'
+                name='email'
                 value={formik.values.username}
                 onChange={formik.handleChange}
-                label="Username"
+                label="email"
                 variant="outlined" />
               <TextField
                 value={formik.values.password}
@@ -274,14 +274,14 @@ function Signin() {
   const adddata = (newdata) => {
     console.log(newdata);
 
-    fetch("https://bookmyshow-backend.vercel.app/users/signup", {
+    fetch("https://reactmdn-backend.vercel.app/users/signup", {
       method: "POST",
       body: JSON.stringify(newdata),
       headers: {
         "content-type": "application/json"
       }
     });
-    navigate("/mycomponent");
+    navigate("/login");
   };
   return (
     <div className="signin-card">
@@ -350,7 +350,7 @@ function MyComponent() {
   const [markdown, setMarkdown] = useState(`${list}`);
   const [preview, setPreview] = useState('');
   useEffect(() => {
-    fetch('https://markdown-node.vercel.app/documents', {
+    fetch('https://reactmdn-backend.vercel.app/documents', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ markdown }),
