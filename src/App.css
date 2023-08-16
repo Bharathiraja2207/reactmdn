@@ -1,0 +1,239 @@
+blockquote::first-letter {
+  text-transform: uppercase;
+ 
+}
+blockquote {
+  font-size: larger;
+  font-style: italic;
+  border-left: 5px solid hsl(210, 22%, 49%);
+  color: hsl(210, 22%, 49%);
+  padding-left: 2rem;
+}
+body{
+  background-color: #f3f3f3;
+}
+.input_box{
+  margin-top: 10px;
+  min-width: 480px;
+  min-height: 500px;
+  border-color: transparent;
+  border-radius: 3px;
+  font-size:1.2rem;
+  line-height: 2;
+  box-shadow: 0 5px 15px black;
+ padding: 2rem 2.5rem;
+}
+.parrent{
+  display: flex;
+  margin-left: 10%;
+}
+.child1{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.output_box{
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  margin-right: 10%;
+  margin-left: 10%;
+  max-height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+  min-width: 400px;
+  max-width: 480px;
+  margin-left: 50px;
+  border-color: transparent;
+  border-radius: 3px;
+  /* font-size:1.2rem; */
+  line-height: 2;
+  box-shadow: 0 5px 15px black;
+ padding: 0.5rem 2rem;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 0.8;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 2.8rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+h4 {
+  font-size: 1.2rem;blockquote::first-letter {
+    text-transform: uppercase;
+   
+  }
+  blockquote {
+    font-size: larger;
+    font-style: italic;
+    border-left: 5px solid hsl(210, 22%, 49%);
+    color: hsl(210, 22%, 49%);
+    padding-left: 2rem;
+  }
+  body{
+    background-color: #f3f3f3;
+  }
+  .input_box{
+    margin-top: 10px;
+    min-width: 480px;
+    min-height: 500px;
+    border-color: transparent;
+    border-radius: 3px;
+    font-size:1.2rem;
+    line-height: 2;
+    box-shadow: 0 5px 15px black;
+   padding: 2rem 2.5rem;
+  }
+  .parrent{
+    display: flex;
+    margin-left: 10%;
+  }
+  .child1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .output_box{
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    max-height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+    min-width: 400px;
+    max-width: 480px;
+    margin-left: 50px;
+    border-color: transparent;
+    border-radius: 3px;
+    /* font-size:1.2rem; */
+    line-height: 2;
+    box-shadow: 0 5px 15px black;
+   padding: 0.5rem 2rem;
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    line-height: 0.8;
+    margin-bottom: 0.75rem;
+  }
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 0.8rem;
+  }
+  p {
+    margin-bottom: 1.2rem;
+    color: hsl(210, 32%, 39%);
+  }
+  p:first{
+    padding-left: 2rem;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .table{
+    text-align: center;
+  }
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.8rem;
+}
+p {
+  margin-bottom: 1.2rem;
+  color: hsl(210, 32%, 39%);
+}
+p:first{
+  padding-left: 2rem;
+}
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.table{
+  text-align: center;
+}
+
+/* login&&signin */
+.loginfield {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.login-card {
+  margin: 20px;
+  padding: 50px;
+
+}
+.signin-card {
+  margin: 20px;
+  padding: 50px;
+
+}
+.newpassword{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+/* .card .alreadyuser:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: dodgerblue
+} */
+.loginform {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
