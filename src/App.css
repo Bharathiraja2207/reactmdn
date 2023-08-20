@@ -2,6 +2,9 @@ blockquote::first-letter {
   text-transform: uppercase;
  
 }
+.navbar{
+  width: 100%;
+}
 blockquote {
   font-size: larger;
   font-style: italic;
