@@ -5,6 +5,12 @@ blockquote::first-letter {
 .navbar{
   width: 100%;
 }
+.button_nav{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
 blockquote {
   font-size: larger;
   font-style: italic;

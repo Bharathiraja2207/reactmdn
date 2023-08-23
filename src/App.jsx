@@ -58,9 +58,21 @@ function ButtonAppBar() {
            >
              {/* <MenuIcon /> */}
            </IconButton>
-           <Button color="inherit"  onClick={()=>navigate("/")}>Home</Button>
-           <Button color="inherit" onClick={()=>navigate("/document")} >Documentation</Button>
-           <Button onClick={handleClick} color="inherit">LOGOUT</Button>
+           <div className='button_nav'>
+            <div><Button color="inherit"  onClick={()=>navigate("/")}>Home</Button>
+           <Button color="inherit" onClick={()=>navigate("/document")} >Documentation</Button></div>
+            <div>
+            {
+        localStorage.getItem("token") == null ?
+          (<Button sx={{ m: 1 }} variant="outlined" color="inherit" onClick={() => navigate("/login")}>Login</Button>
+          ) : (
+            <Button onClick={handleClick} variant="outlined" color="inherit">LOGOUT</Button>
+          )}
+           
+            </div>
+           </div>
+           
+          
          </Toolbar>    
        </AppBar>
       
